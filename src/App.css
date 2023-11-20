@@ -68,5 +68,5 @@ body {
 }
 
 .animate-fadeIn {
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn 0.5s ease-out;
 }

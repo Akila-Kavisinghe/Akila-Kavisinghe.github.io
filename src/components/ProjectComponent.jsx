@@ -6,6 +6,8 @@ const ProjectComponent = ({ techStack, title, description, projectUrl }) => {
   const ref = useRef(null);
 
   useEffect(() => {
+    const currentRef = ref.current; // Capture the current value of ref.current
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -13,17 +15,18 @@ const ProjectComponent = ({ techStack, title, description, projectUrl }) => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1, // Adjust this value based on how much of the item should be visible before triggering the animation
+        threshold: 0.1,
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
+    // Cleanup function
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [ref]);
@@ -31,7 +34,7 @@ const ProjectComponent = ({ techStack, title, description, projectUrl }) => {
   return (
     <div
       ref={ref}
-      className={`max-w-md bg-white px-4 pt-1 pb-5 overflow-hidden shadow-lg cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 ${
+      className={`max-w-md bg-white px-4 pt-1 pb-5 overflow-hidden shadow-lg cursor-pointer transition-all duration-300 ease-in-out ${
         isVisible ? "animate-fadeIn" : "opacity-0"
       }`}
     >

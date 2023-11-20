@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ProfileImage from "../assets/profile.jpg";
 import "../index.css";
 
 const Introduction = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const currentRef = ref.current; // Capture the current value of ref.current
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    // Cleanup function
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [ref]);
+
   return (
-    <div className="w-1/2 flex flex-col items-center pt-3">
+    <div
+      ref={ref}
+      className={`flex flex-col items-center pt-20 pb-40 ${
+        isVisible ? "animate-fadeIn" : "opacity-0"
+      }`}
+    >
       <div className="flex flex-col items-center w-full">
         <img
           src={ProfileImage}
