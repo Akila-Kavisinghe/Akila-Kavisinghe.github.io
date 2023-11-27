@@ -1,7 +1,9 @@
-import ProjectComponent from "./components/ProjectComponent";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Introduction from "./components/Introduction";
+import ExperienceComponent from "./components/ExperienceComponent";
+import ProjectComponent from "./components/ProjectComponent";
+import ADP from "./assets/ADP.jpg";
 
 import React, { useState } from "react";
 
@@ -23,13 +25,20 @@ function App() {
     <div className="bg-background min-h-screen px-4 md:px-10 lg:max-w-6xl mx-auto">
       <NavBar onMenuSelect={handleMenuChange} />
       <div className="flex flex-col">
-        <Introduction></Introduction>
+        <Introduction id="about"></Introduction>
         <div
           className={`relative max-h-[90vh] ${contentClass}`}
           style={{ scrollBehavior: "smooth" }}
         >
           {/* Experience */}
-          <div id="experience" class="flex flex-col pt-5 pl-5">Experience</div>
+          <div id="experience" class="flex flex-col justify-center items-center pt-80 pb-80 pl-5">
+            <ExperienceComponent
+              logo={ADP}
+              title="Senior Developer"
+              period="Jan 2020 - Present"
+              description="Responsible for leading the development team..."
+            />
+          </div>
 
           {/* Projects */}
           <div id="projects" class="grid grid-cols-3 pt-5 pl-5 pb-40">
@@ -83,7 +92,9 @@ function App() {
             </div>
           </div>
           {/* Contact */}
-          <div id="contact" class="flex flex-col pt-5 pl-5">Contact</div>
+          <div id="contact" class="flex flex-col pt-5 pl-5">
+            Contact
+          </div>
         </div>
       </div>
     </div>

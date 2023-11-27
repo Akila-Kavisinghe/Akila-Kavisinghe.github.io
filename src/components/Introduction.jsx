@@ -35,7 +35,7 @@ const Introduction = () => {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center pt-20 pb-40 ${
+      className={`flex flex-col items-center pt-20 pb-20 ${
         isVisible ? "animate-fadeIn" : "opacity-0"
       }`}
     >
