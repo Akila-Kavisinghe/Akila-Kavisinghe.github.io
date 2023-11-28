@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
@@ -34,7 +35,7 @@ import {
   HTML,
   ANGULAR,
   GITHUBACTIONS,
-  CSSIcon
+  CSSIcon,
 } from "./icons";
 
 function App() {
@@ -126,13 +127,41 @@ function App() {
         </div>
         {/* PROJECTs*/}
         <div id="projects" className="min-h-screen">
-          <div className="flex"></div>
-          <Project
-            techStack="React, Node.js, Express, MongoDB"
-            title="My Project"
-            description="This is a description of my project. It was built using React, Node.js, Express, and MongoDB."
-            projectUrl="https://www.example.com"
-          />
+          <div className="flex">
+            <Project
+              techStack="React, Node.js, Express, MongoDB"
+              title="My Project"
+              description="This is a description of my project. It was built using React, Node.js, Express, and MongoDB."
+              projectUrl="https://www.example.com"
+            />
+          </div>
+        </div>
+        <div
+          className="min-h-screen flex flex-col justify-center items-center"
+        >
+          <div className="flex md:flex-row flex-col justify-center items-center space-y-2 md:space-y-0 space-x-0 md:space-x-2">
+            <a
+              href="https://www.linkedin.com/in/akila-kavisinghe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin style={{color: "#0B66C2"}} className="w-24 h-24" />
+            </a>
+            <a
+              href="https://github.com/akila-kavisinghe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub style={{color: "#161515"}} className="w-24 h-24" />
+            </a>
+            <a href="mailto:akilakavisinghe1999@gmail.com">
+              <FaEnvelope style={{color: "#F14335"}} className="w-24 h-24" />
+            </a>
+          </div>
+          <footer className="mt-4 text text-center pb-10">
+            &copy; Akila Kavisinghe 2023
+          </footer>
+          <div id="contact"></div>
         </div>
       </div>
     </div>

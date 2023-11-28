@@ -9,12 +9,15 @@ import IMAGE4 from "../assets/BIKE.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center pt-20">
+    <div className="flex flex-col sm:flex-row justify-center items-center">
       <div className="w-full md:w-1/2 px-10">
         <h1 className="text-2xl font-bold transition-transform duration-500 ease-in-out transform hover:scale-105">WHO AM I?</h1>
         <p className="mt-2 text-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
-          I'm a passionate software developer 💻 and engineer 🛠 with a knack for
+          I'm a passionate software engineer 🛠 with 3+ years of work experience and a knack for
           turning complex challenges into efficient solutions.
+        </p>
+        <p className="mt-2 text-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
+          I graduated from McMaster University 🎓 with a Bachelors in Software Engineering.
         </p>
         <p className="mt-2 text-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
           I love travelling 🌴, making music in my bedroom 🎹, MMA 🤼‍♂️, and spending quality time with my cat 🐱.
