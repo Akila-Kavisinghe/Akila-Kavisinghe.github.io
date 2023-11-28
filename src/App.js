@@ -1,10 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
 
+import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
 import Introduction from "./components/Introduction";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import About from "./components/About";
 
 import ADP from "./assets/ADP.png";
 import CASEWARE from "./assets/CASEWARE.png";
@@ -46,15 +48,20 @@ function App() {
 
   return (
     <div className="min-h-screen px-4 md:px-10 lg:max-w-6xl mx-auto">
+      <BackToTop />
       <NavBar onMenuSelect={handleMenuChange} />
       <div className="flex flex-col">
-        {/* About */}
-        <div id="about" className="h-screen">
+        {/* INTRO */}
+        <div className="min-h-screen">
           <Introduction></Introduction>
         </div>
-        {/* Experience*/}
-        <div id="experience" className="h-screen">
-          <div className="flex flex-col sm:flex-row justify-center items-center space-x-4 pt-10">
+        {/* ABOUT */}
+        <div id="about" className="min-h-screen">
+          <About></About>
+        </div>
+        {/* EXPERIENCE */}
+        <div id="experience" className="min-h-screen">
+          <div className="flex flex-col md:flex-row justify-center items-center space-x-4 pt-10">
             <Experience
               logo={LIFION}
               title="Backend Platform Engineer"
@@ -117,8 +124,8 @@ function App() {
             />
           </div>
         </div>
-        {/* Experience*/}
-        <div id="projects" className="h-screen">
+        {/* PROJECTs*/}
+        <div id="projects" className="min-h-screen">
           <div className="flex"></div>
           <Project
             techStack="React, Node.js, Express, MongoDB"

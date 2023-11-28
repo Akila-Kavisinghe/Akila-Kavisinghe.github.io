@@ -5,7 +5,7 @@ const Project = ({ techStack, title, description, projectUrl }) => {
 
   return (
     <div
-      className={`max-w-md bg-white px-4 pt-1 pb-5 overflow-hidden shadow-lg cursor-pointer`}
+      className={`max-w-md bg-white px-4 pt-1 pb-5 overflow-hidden cursor-pointer`}
     >
       <div className="px-6 py-4 text-left">
         <div className="text-black text-s mb-2">{techStack}</div>
