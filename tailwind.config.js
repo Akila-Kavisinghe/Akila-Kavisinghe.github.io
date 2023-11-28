@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '128': '28 rem',
+      },
       colors:{
         background: '#202022',
         card: '#151515',
