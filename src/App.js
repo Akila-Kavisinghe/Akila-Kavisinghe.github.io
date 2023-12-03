@@ -173,7 +173,7 @@ function App() {
             <Project
               techStack="Java, MySQL"
               title="AnimeMatch (2019)"
-              description="This was a 4 developer project for my Data Structure and Algoirthms Course. It was a dating application that uses complex graphing algorithms to match users based on their anime preferences."
+              description="This was a 4 developer project for my Data Structure and Algoirthms Course. It's a dating application that uses complex graphing algorithms to match users based on their anime preferences."
               projectUrl="https://github.com/Akila-Kavisinghe/AnimeMatch"
               direction={"right"}
               images={[Project_4_1, Project_4_2, Project_4_3]}
