@@ -63,15 +63,15 @@ function App() {
       <NavBar onMenuSelect={handleMenuChange} />
       <div className="flex flex-col">
         {/* INTRO */}
-        <div className="min-h-screen pt-40">
+        <div className="min-h-screen">
           <Introduction></Introduction>
         </div>
         {/* ABOUT */}
-        <div id="about" className="min-h-screen pt-40">
+        <div id="about" className="min-h-screen pt-20">
           <About></About>
         </div>
         {/* EXPERIENCE */}
-        <div id="experience" className="min-h-screen pt-40">
+        <div id="experience" className="min-h-screen">
           <div className="flex flex-col md:flex-row justify-center items-center space-x-4 pt-10">
             <Experience
               logo={LIFION}
