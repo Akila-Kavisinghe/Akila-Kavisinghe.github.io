@@ -9,10 +9,20 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import About from "./components/About";
 
-import ADP from "./assets/ADP.png";
-import CASEWARE from "./assets/CASEWARE.png";
-import LIFION from "./assets/LIFION.png";
-import BELL from "./assets/BELL.png";
+import ADP from "./assets/experience/ADP.png";
+import CASEWARE from "./assets/experience/CASEWARE.png";
+import LIFION from "./assets/experience/LIFION.png";
+import BELL from "./assets/experience/BELL.png";
+
+import Project_1_1 from "./assets/projects/energize-1.png"
+import Project_1_2 from "./assets/projects/energize-2.png"
+import Project_2_1 from "./assets/projects/amberalertplus-summary.png"
+import Project_3_1 from "./assets/projects/spaceship-ship1.png"
+import Project_3_2 from "./assets/projects/spaceship-ship2.png"
+import Project_3_3 from "./assets/projects/spaceship-shop.png"
+import Project_4_1 from "./assets/projects/animematch-main_menu.png"
+import Project_4_2 from "./assets/projects/animematch-login.png"
+import Project_4_3 from "./assets/projects/animematch-chat.png"
 
 import {
   AWS,
@@ -53,15 +63,15 @@ function App() {
       <NavBar onMenuSelect={handleMenuChange} />
       <div className="flex flex-col">
         {/* INTRO */}
-        <div className="min-h-screen">
+        <div className="min-h-screen pt-40">
           <Introduction></Introduction>
         </div>
         {/* ABOUT */}
-        <div id="about" className="min-h-screen">
+        <div id="about" className="min-h-screen pt-40">
           <About></About>
         </div>
         {/* EXPERIENCE */}
-        <div id="experience" className="min-h-screen">
+        <div id="experience" className="min-h-screen pt-40">
           <div className="flex flex-col md:flex-row justify-center items-center space-x-4 pt-10">
             <Experience
               logo={LIFION}
@@ -127,12 +137,47 @@ function App() {
         </div>
         {/* PROJECTs*/}
         <div id="projects" className="min-h-screen">
-          <div className="flex">
+          <div className="flex flex-row">
             <Project
-              techStack="React, Node.js, Express, MongoDB"
-              title="My Project"
-              description="This is a description of my project. It was built using React, Node.js, Express, and MongoDB."
+              techStack="React, JavaScript/TypeScript, Node.js, MySQL, Express"
+              title="Energize (2023)"
+              description="This is an ongoing project meant to show off my skills as a full stack engineer. It will be a web application that allows users to track their nutrition, and exercise. I work on it daily and I am very excited to show it off when it is done! Since it is still in development I've included some AI generated images that are being used for UI Inspiration."
               projectUrl="https://www.example.com"
+              direction={"left"}
+              images={[Project_1_1, Project_1_2]}
+              showProjectButton={true}
+            />
+          </div>
+          <div className="flex flex-row">
+            <Project
+              techStack="Python, Django, MySQL, React, JavaScript"
+              title="Amber Alert Plus (2021)"
+              description="This was my 6 developer project for my Capstone Project. It was a complete overhaul of the existing Amber Alert system. It featured enhanced alert messaging, a centralised information hub, and sight reporting. Unforunately the code base is not available anymore."
+              projectUrl=""
+              direction={"right"}
+              images={[Project_2_1]}
+            />
+          </div>
+          <div className="flex flex-row">
+            <Project
+              techStack="Python, Pygame"
+              title="iSpaceship (2019)"
+              description="This was a 5 developer project for my Software Architecture Course. We utilized a Model View Presenter which is common in video game development. Checkout the deliverable folder on my Github to see the thought that went into the project!"
+              projectUrl="https://github.com/Akila-Kavisinghe/iSpaceship"
+              direction={"left"}
+              images={[Project_3_1, Project_3_2, Project_3_3]}
+              showProjectButton={true}
+            />
+          </div>
+          <div className="flex flex-row">
+            <Project
+              techStack="Java, MySQL"
+              title="AnimeMatch (2019)"
+              description="This was a 4 developer project for my Data Structure and Algoirthms Course. It was a dating application that uses complex graphing algorithms to match users based on their anime preferences."
+              projectUrl="https://github.com/Akila-Kavisinghe/AnimeMatch"
+              direction={"right"}
+              images={[Project_4_1, Project_4_2, Project_4_3]}
+              showProjectButton={true}
             />
           </div>
         </div>
@@ -145,20 +190,20 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin style={{color: "#0B66C2"}} className="w-24 h-24" />
+              <FaLinkedin style={{color: "#0B66C2"}} className="w-24 h-24 transition-transform duration-500 ease-in-out transform hover:scale-105" />
             </a>
             <a
               href="https://github.com/akila-kavisinghe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub style={{color: "#161515"}} className="w-24 h-24" />
+              <FaGithub style={{color: "#161515"}} className="w-24 h-24 transition-transform duration-500 ease-in-out transform hover:scale-105" />
             </a>
             <a href="mailto:akilakavisinghe1999@gmail.com">
-              <FaEnvelope style={{color: "#F14335"}} className="w-24 h-24" />
+              <FaEnvelope style={{color: "#F14335"}} className="w-24 h-24 transition-transform duration-500 ease-in-out transform hover:scale-105" />
             </a>
           </div>
-          <footer className="mt-4 text text-center pb-10">
+          <footer className="mt-4 text text-center pb-10 transition-transform duration-500 ease-in-out transform hover:scale-105">
             &copy; Akila Kavisinghe 2023
           </footer>
           <div id="contact"></div>

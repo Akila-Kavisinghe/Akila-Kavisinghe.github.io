@@ -2,10 +2,10 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
-import IMAGE1 from "../assets/TRAVEL.png";
-import IMAGE2 from "../assets/MUSIC.png";
-import IMAGE3 from "../assets/CAT.png";
-import IMAGE4 from "../assets/BIKE.png";
+import IMAGE1 from "../assets/about/TRAVEL.png";
+import IMAGE2 from "../assets/about/MUSIC.png";
+import IMAGE3 from "../assets/about/CAT.png";
+import IMAGE4 from "../assets/about/BIKE.png";
 
 const About = () => {
   return (
