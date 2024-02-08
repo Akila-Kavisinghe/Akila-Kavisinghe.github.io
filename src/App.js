@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
@@ -13,6 +13,7 @@ import ADP from "./assets/experience/ADP.png";
 import CASEWARE from "./assets/experience/CASEWARE.png";
 import LIFION from "./assets/experience/LIFION.png";
 import BELL from "./assets/experience/BELL.png";
+import LIMELIGHT from "./assets/experience/LIMELIGHT.png";
 
 import Project_1_1 from "./assets/projects/energize-1.png"
 import Project_1_2 from "./assets/projects/energize-2.png"
@@ -46,6 +47,9 @@ import {
   ANGULAR,
   GITHUBACTIONS,
   CSSIcon,
+  NEXTJS,
+  FIREBASE,
+  FIGMA,
 } from "./icons";
 
 function App() {
@@ -73,9 +77,24 @@ function App() {
         {/* EXPERIENCE */}
         <div id="experience" className="min-h-screen">
           <div className="flex flex-col md:flex-row justify-center items-center space-x-4 pt-10">
+          <Experience
+              logo={LIMELIGHT}
+              title="Full Stack Mobile Engineer"
+              period="Mar 2023 - Present"
+              description="Co-founded a live streaming app, leading its UI/UX redesign, backend optimization, and marketing to engage over 500 daily users."
+              techIcons={[
+                REACT,
+                TYPESCRIPT,
+                NODE,
+                NEXTJS,
+                FIREBASE,
+                FIGMA,
+                AWS
+              ]}
+            />
             <Experience
               logo={LIFION}
-              title="Backend Platform Engineer"
+              title="LIFION Platform Engineer"
               period="Mar 2023 - Sept 2023"
               description="Developed seamless traffic distributor, created monitoring dashboards, and improved functional parity in software engines."
               techIcons={[
@@ -92,8 +111,8 @@ function App() {
             />
             <Experience
               logo={ADP}
-              title="Full Stack Software Developer"
-              period="Sept 2022 - Mar 2023"
+              title="Full Stack Software Engineer"
+              period="Sept 2022 - Feb 2023"
               description="Resolved front and backend issues, increased accessibility compliance, and participated in UI component upgrades."
               techIcons={[
                 TYPESCRIPT,
@@ -112,15 +131,15 @@ function App() {
             />
             <Experience
               logo={BELL}
-              title="Full Stack Software Contractor"
-              period="Apr 2021 - Sept 2022"
-              description="Automated power plant control interface password rotation and developed a webscraper for power plant control."
+              title="Full Stack Software Engineer"
+              period="Sept 2021 - Aug 2022"
+              description="Enhanced cell tower connectivity for Bell Canada with a cutting-edge automation service, significantly improving network stability."
               techIcons={[SELENIUM, PYTHON, POSTGRES, POSTMAN, GIT]}
             />
             <Experience
               logo={CASEWARE}
-              title="Data Analytics Software Developer"
-              period="May 2020 - Aug 2020"
+              title="Data Analytics Software Engineer"
+              period="May 2020 - Aug 2021"
               description="Aided in code migration and refactoring, and developed software bindings using external accounting software APIs."
               techIcons={[
                 JS,
@@ -191,6 +210,13 @@ function App() {
               rel="noopener noreferrer"
             >
               <FaLinkedin style={{color: "#0B66C2"}} className="w-24 h-24 transition-transform duration-500 ease-in-out transform hover:scale-105" />
+            </a>
+            <a
+              href="https://twitter.com/techbyakila"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter style={{color: "#0B66C2"}} className="w-24 h-24 transition-transform duration-500 ease-in-out transform hover:scale-105" />
             </a>
             <a
               href="https://github.com/akila-kavisinghe"

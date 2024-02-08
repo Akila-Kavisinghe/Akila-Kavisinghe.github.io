@@ -107,3 +107,19 @@ export const CSSIcon = {
     src: "https://skillicons.dev/icons?i=css",
     alt: "CSS",
   };
+
+export const FIREBASE = {
+  src: "https://skillicons.dev/icons?i=firebase",
+  alt: "FIREBASE",
+};
+
+export const FIGMA = {
+  src: "https://skillicons.dev/icons?i=figma",
+  alt: "FIGMA",
+};
+
+export const NEXTJS = {
+  src: "https://skillicons.dev/icons?i=nextjs",
+  alt: "NEXTJS",
+};
+  
