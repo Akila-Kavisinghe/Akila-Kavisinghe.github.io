@@ -1,31 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.eee8a74e.css",
-    "main.js": "/static/js/main.014f7fcb.js",
+    "main.css": "/static/css/main.8297dc5b.css",
+    "main.js": "/static/js/main.c41a329d.js",
     "static/media/BIKE.png": "/static/media/BIKE.cefe4bfc365a7e47335d.png",
     "static/media/CAT.png": "/static/media/CAT.4ab520fccfcd69134dbb.png",
     "static/media/TRAVEL.png": "/static/media/TRAVEL.5d13f7d8e7ef6423143c.png",
     "static/media/MUSIC.png": "/static/media/MUSIC.23094e3b60279c303158.png",
-    "static/media/energize-2.png": "/static/media/energize-2.e6bc986acef7f48a601a.png",
-    "static/media/energize-1.png": "/static/media/energize-1.12688f9a4526dd31f152.png",
     "static/media/amberalertplus-summary.png": "/static/media/amberalertplus-summary.69454cb3051025b2424f.png",
-    "static/media/animematch-main_menu.png": "/static/media/animematch-main_menu.05c890c7dda035146cce.png",
+    "static/media/STOMPERS.png": "/static/media/STOMPERS.3c9e9f4c2d030b69b563.png",
     "static/media/spaceship-shop.png": "/static/media/spaceship-shop.4b43b098a5ed693aa0b3.png",
     "static/media/spaceship-ship2.png": "/static/media/spaceship-ship2.151379888661962ca4b7.png",
     "static/media/spaceship-ship1.png": "/static/media/spaceship-ship1.c04c38bace4240c22ef4.png",
-    "static/media/animematch-chat.png": "/static/media/animematch-chat.d5d001497f088ce3f353.png",
     "static/media/ADP.png": "/static/media/ADP.6a6d9adc10f476f1990b.png",
-    "static/media/LIFION.png": "/static/media/LIFION.d8773a91492ef797a166.png",
     "static/media/CASEWARE.png": "/static/media/CASEWARE.fcea873f79435e538e93.png",
     "static/media/profile.png": "/static/media/profile.ed7bf81f80a572b9833c.png",
-    "static/media/animematch-login.png": "/static/media/animematch-login.76c0468ca29337722acf.png",
+    "static/media/PARALLELZ.png": "/static/media/PARALLELZ.547549ad9341899de37b.png",
     "static/media/BELL.png": "/static/media/BELL.634a839b5526a6c4a1cb.png",
     "index.html": "/index.html",
-    "main.eee8a74e.css.map": "/static/css/main.eee8a74e.css.map",
-    "main.014f7fcb.js.map": "/static/js/main.014f7fcb.js.map"
+    "main.8297dc5b.css.map": "/static/css/main.8297dc5b.css.map",
+    "main.c41a329d.js.map": "/static/js/main.c41a329d.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee8a74e.css",
-    "static/js/main.014f7fcb.js"
+    "static/css/main.8297dc5b.css",
+    "static/js/main.c41a329d.js"
   ]
 }
