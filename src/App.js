@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 import BackToTop from "./components/BackToTop";
@@ -59,6 +60,22 @@ function App() {
     }
   };
 
+  return (
+    <Router>
+      <Routes>
+        <Route path="/resume" element={<RedirectToPDF />} />
+        <Route path="/" element={<MainContent handleMenuChange={handleMenuChange} />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function RedirectToPDF() {
+  window.location.href = `${process.env.PUBLIC_URL}/resume.pdf`;
+  return null;
+}
+
+function MainContent({ handleMenuChange }) {
   return (
     <div className="min-h-screen px-4 md:px-10 lg:max-w-6xl mx-auto">
       <BackToTop />
